@@ -750,4 +750,5 @@ $settings['trusted_host_patterns'] = [
   // example at http://webserver/user).
   '^webserver$',
   '^example\.com$',
+  '^content\.lecatering\.dcycleproject\.org$'
 ];
