@@ -7,13 +7,5 @@
  * will be loaded automatically.
  */
 
-// This is an example.
-$config['my-super-secret-api-key'] = 'princess';
-
-// Example to override the dummy mail client with your own SMTP server, in
-// this example gmail.
-$config['smtp.settings']['smtp_host'] = 'smtp.gmail.com';
-$config['smtp.settings']['smtp_port'] = 465;
-$config['smtp.settings']['smtp_username'] = 'YOUR_NAME@gmail.com';
-$config['smtp.settings']['smtp_password'] = 'YOUR_PASSWORD';
-$config['smtp.settings']['smtp_protocol'] = 'ssl';
+$config['geolocation_google_maps.settings']['google_map_api_key'] = 'fronendkey';
+$config['geolocation_google_maps.settings']['google_map_api_server_key'] = 'backendkey';

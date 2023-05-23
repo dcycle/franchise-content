@@ -1,0 +1,19 @@
+uuid: 489978fc-561a-4f1e-96c0-d585416a321f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_short_path
+    - node.type.franchise
+id: node.franchise.field_short_path
+field_name: field_short_path
+entity_type: node
+bundle: franchise
+label: 'Short Path'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

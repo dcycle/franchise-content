@@ -29,6 +29,8 @@ composer config --no-plugins allow-plugins.drupal/* true
 composer config repositories.drupal composer https://packages.drupal.org/8
 
 composer require \
+  drupal/geolocation \
+  drupal/address \
   drupal/devel \
   drupal/field_group \
   drupal/email_registration \
