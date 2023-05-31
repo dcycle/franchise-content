@@ -5,6 +5,7 @@ namespace Drupal\my_custom_module\traits;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Logger\RfcLogLevel;
 use Drupal\Core\Utility\Error;
+use Drupal\my_custom_module\App;
 
 /**
  * General utilities trait.
@@ -13,6 +14,10 @@ use Drupal\Core\Utility\Error;
  * and these methods will be available and mockable in tests.
  */
 trait Environment {
+
+  public function app() {
+    return App::instance();
+  }
 
   /**
    * Mockable wrapper around drupal_set_message().
@@ -58,6 +63,11 @@ trait Environment {
    */
   public function stateSet($variable, $value) {
     \Drupal::state()->set($variable, $value);
+  }
+
+  public function configGet($location, $key, $default) {
+    return \Drupal::config($location)
+      ->get($key, $default);
   }
 
   /**
